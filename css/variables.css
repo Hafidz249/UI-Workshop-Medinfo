@@ -1,0 +1,23 @@
+/* Root variables for theme */
+:root {
+  --primary-color: #3a6ea5;
+  --secondary-color: #1e2a44;
+  --text-color: #e5e5e5;
+  --background-color: #121620;
+  --accent-color: #4d7bb3;
+  --hover-color: #5889c4;
+  --dark-text: #333;
+  --card-bg: #1e1e2b;
+  --transition: all 0.3s ease;
+}
+
+/* Utility classes */
+.bg-light {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.bg-dark {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}

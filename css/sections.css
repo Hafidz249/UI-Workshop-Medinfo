@@ -1,0 +1,231 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 5% 80px;
+  background: linear-gradient(rgba(18, 22, 32, 0.9), rgba(18, 22, 32, 0.9)),
+    url("../hero-bg.jpg") no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+}
+
+.hero-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* About Section */
+.about,
+.contact {
+  text-align: center;
+  padding: 80px 5%;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after,
+.menu h2::after,
+.contact h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about p,
+.contact p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+/* Menu/Bidang Section */
+.menu {
+  text-align: center;
+  padding: 80px 5%;
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.menu-item {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.menu-item h3 {
+  color: var(--primary-color);
+  padding: 15px 15px 5px;
+  font-size: 1.3rem;
+}
+
+.menu-item p {
+  padding: 0 15px 20px;
+  color: var(--text-color);
+}
+
+/* Description */
+.description h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.description h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  bottom: -10px;
+  left: 0;
+}
+
+.description p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.features-list {
+  list-style: none;
+  margin: 20px 0 30px;
+}
+
+.features-list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.features-list li i {
+  color: var(--accent-color);
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* Contact Form */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact button {
+  align-self: flex-start;
+}
+
+/* Footer */
+footer {
+  background: var(--secondary-color);
+  padding: 20px 5%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}

@@ -1,0 +1,127 @@
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .description {
+    order: 1;
+    text-align: center;
+  }
+
+  .photo {
+    order: 0;
+    margin-bottom: 30px;
+  }
+
+  .description h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .features-list li {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 140px 5% 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .btn-signup {
+    display: none;
+  }
+
+  #main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  #main-nav.active {
+    right: 0;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-nav ul li {
+    margin-bottom: 20px;
+  }
+
+  #main-nav ul li a {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about,
+  .menu,
+  .contact {
+    padding: 60px 5%;
+  }
+
+  .about h2,
+  .menu h2,
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .description h2 {
+    font-size: 1.6rem;
+  }
+}
