@@ -41,6 +41,17 @@
 	color: rgba(255,255,255,0.68);
 }
 
+/* Karya (light background) captions */
+.karya .caption {
+	color: var(--text-color);
+	font-weight: 500;
+}
+
+/* Slightly larger section headings spacing */
+.section-container h2 {
+	margin-bottom: 0.5rem;
+}
+
 @media (max-width: 1200px) {
 	.gallery-grid { grid-template-columns: repeat(3, 1fr); }
 }
